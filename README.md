@@ -27,7 +27,7 @@
 - Статус: Synchronization enabled.
 
 ## Скриншоты
-![Agents](screenshots/agents.png)
+![Agents](Agents.png)
 ![Build](screenshots/build.png)
 ![Nexus](screenshots/nexus.png)
 
