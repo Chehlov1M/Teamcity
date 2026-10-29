@@ -29,7 +29,7 @@
 ## Скриншоты
 ![Agents](Agents.png)
 ![Master](Master.png)
-![Artifacts](Artifacts.png.png)
+![Artifacts](Artifacts.png)
 
 ## Ссылка на репозиторий
 [https://github.com/Chehlov1M/example-teamcity.git](https://github.com/Chehlov1M/example-teamcity.git))
