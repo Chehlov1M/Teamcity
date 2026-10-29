@@ -35,4 +35,4 @@
 ![feature_add_reply](Feature_add_reply.png)
 ![feature_add_reply](Feature_add_reply_artifacts.png)
 ## Ссылка на репозиторий
-[https://github.com/Chehlov1M/example-teamcity.git](https://github.com/Chehlov1M/example-teamcity.git))
+[https://github.com/Chehlov1M/example-teamcity.git](https://github.com/Chehlov1M/example-teamcity.git)
