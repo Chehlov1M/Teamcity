@@ -28,7 +28,7 @@
 
 ## Скриншоты
 ![Agents](Agents.png)
-![Build](screenshots/build.png)
+![Master](Master.png)
 ![Nexus](screenshots/nexus.png)
 
 ## Ссылка на репозиторий
