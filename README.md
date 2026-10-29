@@ -1,17 +1,30 @@
 # Решение ДЗ TeamCity
 
-## Инфраструктура
-- TeamCity Server: `<IP>`
-- TeamCity Agent: `<IP>`
 
-## Настройка TeamCity
-- Сервер запущен в Docker: `jetbrains/teamcity-server:2023.11.1`
-- Агент подключён и одобрен.
+## Исходники
+- Репозиторий
+- Ветка master
+- Ветка feature/add_reply
 
-## Сборка и артефакты
-- Ветка `master`: `mvn clean deploy` → артефакт в Nexus.
-- Feature‑ветки: `mvn clean test` → только тесты.
-- Новый метод `Welcomer.getReply()` содержит слово `hunter`, тесты проходят.
+## Конфигурация TeamCity
+- Проект: TeamCityHomework
+- Конфигурация сборки: Deploy to Master (ID: TeamCityHomework_deploy_to_master)
+- Branch-based логика:
+  - master → mvn clean deploy
+  - feature/* → mvn clean test (через отдельную конфигурацию или branch spec)
+
+## Настройки Maven и Deploy
+- settings.xml загружен в TeamCity (параметры конфигурации).
+- distributionManagement в pom.xml настроен на Nexus (http://51.250.13.64:8081/...).
+- ID сервера в settings.xml: nexus.
+
+## Результаты сборок
+- Сборка feature/add_reply: Тесты прошли (5 passed), артефакт .jar собран.
+- Сборка master (после мерджа): Тесты прошли, deploy запущен.
+- Примечание: Этап deploy завершился ошибкой Connection timed out к Nexus — это инфраструктурная проблема, конфигурация сборки и код корректны.
+
+## Versioned Settings (DSL)
+- Статус: Synchronization enabled.
 
 ## Скриншоты
 ![Agents](screenshots/agents.png)
