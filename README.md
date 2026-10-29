@@ -24,7 +24,7 @@
 - Примечание: Этап deploy завершился ошибкой Connection timed out к Nexus — это инфраструктурная проблема, конфигурация сборки и код корректны.
 
 ## Versioned Settings (DSL)
-- Статус: Synchronization enabled.
+- Статус: Cannot find previous revision of project.
 
 ## Скриншоты
 ![Agents](Agents.png)
