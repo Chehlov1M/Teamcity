@@ -24,7 +24,9 @@
 - Примечание: Этап deploy завершился ошибкой Connection timed out к Nexus — это инфраструктурная проблема, конфигурация сборки и код корректны.
 
 ## Versioned Settings (DSL)
-- Статус: Cannot find previous revision of project.
+- Синхронизация включена: 
+- Файлы DSL в репозитории: .teamcity/kotlin/project.kts и др.
+- Статус: Synchronization enabled.
 
 ## Скриншоты
 ![Agents](Agents.png)
